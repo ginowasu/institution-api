@@ -1,0 +1,47 @@
+[
+    {
+        "id" : "1",
+        "name" : "สำนักงานรับรองมาตรฐานและประเมินคุณภาพการศึกษา",
+        "tier" : {
+            "course" : false,
+            "agency" : false,
+            "institution" : true
+        }
+    },
+    {
+        "id": "2",
+        "name": "สำนักงานคณะกรรมการอุดมศึกษา",
+        "tier": {
+            "course": true,
+            "agency": true,
+            "institution": true
+        }
+    },
+    {
+        "id": "3",
+        "name": "สภาการพยาบาล",
+        "tier": {
+            "course": true,
+            "agency": false,
+            "institution": false
+        }
+    },
+    {
+        "id": "4",
+        "name": "เครือข่ายการประกันคุณภาพมหาวิทยาลัยอาเซียน",
+        "tier": {
+            "course": true,
+            "agency": false,
+            "institution": false
+        }
+    },
+    {
+        "id": "5",
+        "name": "คณะกรรมการรางวัลคุณภาพแห่งชาติ",
+        "tier": {
+            "course": false,
+            "agency": true,
+            "institution": true
+        }
+    }
+]
