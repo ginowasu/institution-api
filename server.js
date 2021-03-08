@@ -2,6 +2,7 @@ const express = require('express');
 var cors = require('cors')
 const app = express()
 const institution = require('./institution.json')
+const framework = require('./framework.json')
 const morgan = require('morgan')
 const createError = require('http-errors')
 // const bodyParser = require('body-parser')
@@ -46,6 +47,31 @@ app.put('/institution/:id', (req, res) => {
 app.delete('/institution/:id', (req, res) => {
     const deleteIndex = institution.findIndex(institution => institution.id === req.params.id)
     institution.splice(deleteIndex, 1)
+    res.status(204).send('delete complete')
+})
+
+app.get('/framework', (req, res) => {
+    res.json(framework)
+})
+
+app.get('/framework/:id', (req, res) => {
+    res.json(framework.find(framework => framework.id === req.params.id))
+})
+
+app.post('/framework', (req, res) => {
+    // console.log(req);
+    framework.push(req.body)
+    res.status(201).json(req.body)
+})
+
+app.put('/framework/:id', (req, res) => {
+    const updateIndex = framework.findIndex(framework => framework.id === req.params.id)
+    res.json(Object.assign(framework[updateIndex], req.body))
+})
+
+app.delete('/framework/:id', (req, res) => {
+    const deleteIndex = framework.findIndex(framework => framework.id === req.params.id)
+    framework.splice(deleteIndex, 1)
     res.status(204).send('delete complete')
 })
 

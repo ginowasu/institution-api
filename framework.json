@@ -1,0 +1,32 @@
+[
+    {
+        "id": "1",
+        "institutionName" : "สำนักงานรับรองมาตรฐานและประเมินคุณภาพการศึกษา",
+        "tier" : {
+            "course" : false,
+            "agency" : false,
+            "institution" : true
+        },
+        "tierCourse": 0,
+        "frameworkName" : "คู่มือประกันคุณภาพการศึกษาภายในระดับอุดมศึกษา ฉบับปีการศึกษา 2557",
+        "frameworkYear" : "2557",
+        "indicatorDefindName" : "",
+        "criteriaDefindName" : "",
+        "isDefindIndicators" : false,
+        "isDefindCriteria" : false,
+        "indicatorsGroupName" : "",
+        "criteriaGroupName" : "",
+        "indicatorsGroup" : [
+            {
+                "name" : "",
+                "indicatorname" : ""
+            }
+        ],
+        "typeGroup": [
+            {
+                "name" : ""
+            }
+        ]
+
+    }
+]
