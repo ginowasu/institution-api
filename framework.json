@@ -2,12 +2,8 @@
     {
         "id": "1",
         "institutionName" : "สำนักงานรับรองมาตรฐานและประเมินคุณภาพการศึกษา",
-        "tier" : {
-            "course" : false,
-            "agency" : false,
-            "institution" : true
-        },
-        "tierCourse": 0,
+        "tier" : 1,
+        "tierCourse": 1,
         "frameworkName" : "คู่มือประกันคุณภาพการศึกษาภายในระดับอุดมศึกษา ฉบับปีการศึกษา 2557",
         "frameworkYear" : "2557",
         "indicatorDefindName" : "",
